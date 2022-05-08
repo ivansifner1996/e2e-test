@@ -10,7 +10,7 @@ jobs:
     displayName: 'Install Node.js'
   - script: npm install
     displayName: 'Install TestCafe'
-  - script: npm test
+  - script: npm run e2e
     displayName: 'Run TestCafe Tests'
   - task: PublishTestResults@2
     inputs:
