@@ -1,0 +1,6 @@
+{
+    "browser" : "chrome",
+    "src" : ["e2e-testcafe/regression/**/*.e2e.js"],
+    "skipJsErrors": true,
+    "pageRequestTimeout": 20000
+}
