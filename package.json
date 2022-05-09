@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "e2e": "testcafe chrome"
+    "e2e": "testcafe chrome:headless --reporter spec,xunit:report.xml"
   },
   "author": "",
   "license": "ISC",

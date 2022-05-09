@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite name="TestCafe Tests: Chrome 101.0.4951.54 / Windows 10" tests="15" failures="6" skipped="0" errors="6" time="326.71" timestamp="Mon, 09 May 2022 17:59:23 GMT" >
+  <testcase classname="php travels test login" file="C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\smoke\smoke.testcafe.e2e.js" name="Provjeri da li se aplikacija uspjesno ucitava i ispravnost linka" time="12.384">
+  </testcase>
+  <testcase classname="php travels test login" file="C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\smoke\smoke.testcafe.e2e.js" name="Da li su glavni linkovi dostupni i mogu li se obici" time="21.55">
+  </testcase>
+  <testcase classname="php travels test login" file="C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\date.testcafe.e2e.js" name="Provjeri da li se aplikacija uspjesno ucitava i ispravnost linka" time="14.704">
+  </testcase>
+  <testcase classname="php travels test login" file="C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\date.testcafe.e2e.js" name="Odaberi grad iz dropdown menua na 3 rijeci i provjeri da li postoji" time="19.333">
+    <failure>
+    <![CDATA[
+      1) AssertionError: expected 1 to deeply equal 4
+
+         + expected - actual
+
+         -1
+         +4
+
+
+         Browser: Chrome 101.0.4951.54 / Windows 10
+
+            44 |    ('Odaberi grad iz dropdown menua na 3 rijeci i provjeri da li postoji', async t => {
+            45 |        await t
+            46 |            .click(orderDatepageObject.getElementByLabelName('City Name', allInputs))
+            47 |            .typeText((await orderDatepageObject.getCityInput(allInputs)), 'Zag')
+            48 |            .expect((await orderDatepageObject.getAllSearchResults()).count)
+          > 49 |            .eql(4)
+            50 |            .wait(4000)
+            51 |
+            52 |        await t
+            53 |            .click(await orderDatepageObject.selectInputByIndex(2))
+            54 |            .wait(5000)
+
+            at <anonymous> (C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\date.testcafe.e2e.js:49:14)
+            at asyncGeneratorStep (C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\date.testcafe.e2e.js:6:265)
+            at _next (C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\date.testcafe.e2e.js:6:603)
+    ]]>
+    </failure>
+  </testcase>
+  <testcase classname="php travels test login" file="C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\date.testcafe.e2e.js" name="Provjeri da li je datum dolaska veci od datuma odlaska i odradi search" time="19.051">
+    <failure>
+    <![CDATA[
+      1) AssertionError: expected 1 to deeply equal 4
+
+         + expected - actual
+
+         -1
+         +4
+
+
+         Browser: Chrome 101.0.4951.54 / Windows 10
+
+            67 |        
+            68 |        await t
+            69 |            .click(orderDatepageObject.getElementByLabelName('City Name', allInputs))
+            70 |            .typeText((await orderDatepageObject.getCityInput(allInputs)), 'Zag')
+            71 |            .expect((await orderDatepageObject.getAllSearchResults()).count)
+          > 72 |            .eql(4)
+            73 |            .wait(4000)
+            74 |
+            75 |        await t
+            76 |            .click(await orderDatepageObject.selectInputByIndex(2))
+            77 |            .wait(5000)
+
+            at <anonymous> (C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\date.testcafe.e2e.js:72:14)
+            at asyncGeneratorStep (C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\date.testcafe.e2e.js:6:265)
+            at _next (C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\date.testcafe.e2e.js:6:603)
+    ]]>
+    </failure>
+  </testcase>
+  <testcase classname="php travels test login" file="C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\flight.form.testcafe.e2e.js" name="Provjeri da li se aplikacija za letove uspjesno ucitava i ispravnost linka" time="10.733">
+  </testcase>
+  <testcase classname="php travels test login" file="C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\flight.form.testcafe.e2e.js" name="Odaberi grad iz dropdown menua na 3 rijeci i provjeri da li postoji" time="35.534">
+    <failure>
+    <![CDATA[
+      1) AssertionError: expected false to be truthy
+
+         Browser: Chrome 101.0.4951.54 / Windows 10
+
+             94 |            
+             95 |        console.log("expect flying modal to be showed");
+             96 |        await commonButton.clickOnButton()
+             97 |        await t
+             98 |            .wait(2000).expect(Selector('#flights_load').hasClass('show'))
+          >  99 |            .ok()
+            100 |
+            101 |
+            102 |
+            103 |})
+            104 |
+
+            at <anonymous> (C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\flight.form.testcafe.e2e.js:99:14)
+            at asyncGeneratorStep (C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\flight.form.testcafe.e2e.js:7:276)
+            at _next (C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\flight.form.testcafe.e2e.js:7:614)
+    ]]>
+    </failure>
+  </testcase>
+  <testcase classname="php travels test login" file="C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\flight.form.testcafe.e2e.js" name="Provjeri da li je return date prikazan nakon klika i da li su letovi uzlazno poredani po cijeni" time="44.594">
+  </testcase>
+  <testcase classname="php travels test login" file="C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\tours.form.testcafe.e2e.js" name="Provjeri da li se tours uspjesno ucitava i ispravnost linka" time="16.221">
+  </testcase>
+  <testcase classname="php travels test login" file="C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\tours.form.testcafe.e2e.js" name="Aplikacija treba naci tours prema proizvoljnoj pretrazi" time="24.708">
+    <failure>
+    <![CDATA[
+      1) The specified selector does not match any element in the DOM tree.
+
+            | Selector('.select2-results__options')
+            |   .child('li')
+            |   .with({ timeout: 3000 })
+          > |   .nth(2)
+            |   .with({ timeout: 7000 })
+
+         Browser: Chrome 101.0.4951.54 / Windows 10
+
+            49 |        await t
+            50 |            .wait(1000)
+            51 |            .click(destination)
+            52 |            .typeText((await toursPageObject.getCityInput()), 'Zag')
+            53 |            .wait(500)
+          > 54 |            .click(await toursPageObject.selectInputByIndex(2))
+            55 |
+            56 |        await t
+            57 |            .click(orderDate)
+            58 |        const selectedDate = Object.values(await toursPageObject.getAvailableCheckInOutDates(3))[1]
+            59 |        console.log(`selected date je ${selectedDate}`);
+
+            at <anonymous> (C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\tours.form.testcafe.e2e.js:54:14)
+            at asyncGeneratorStep (C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\tours.form.testcafe.e2e.js:6:265)
+            at _next (C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\tours.form.testcafe.e2e.js:6:603)
+    ]]>
+    </failure>
+  </testcase>
+  <testcase classname="php travels test login" file="C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\tours.form.testcafe.e2e.js" name="Provjera da li se odradila navigacija na ispravan link te ispravnost prikaza rezultata" time="14.239">
+    <failure>
+    <![CDATA[
+      1) The "url" argument is expected to be a non-empty string, but it was "".
+
+         Browser: Chrome 101.0.4951.54 / Windows 10
+
+            85 |
+            86 |test.meta({testType: 'regression', severity: 'medium', author: 'ivan'})
+            87 |    ("Provjera da li se odradila navigacija na ispravan link te ispravnost prikaza rezultata", 
+            88 |        async t => {
+            89 |            await t
+          > 90 |                .navigateTo(toursPageObject.updatedLink)
+            91 |                .wait(3000)
+            92 |                .expect((ClientFunction(() => window.location.href)()))
+            93 |                .eql(toursPageObject.updatedLink)
+            94 |
+            95 |    })
+
+            at <anonymous> (C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\tours.form.testcafe.e2e.js:90:18)
+            at asyncGeneratorStep (C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\tours.form.testcafe.e2e.js:6:265)
+            at _next (C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\tours.form.testcafe.e2e.js:6:603)
+            at <anonymous> (C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\tours.form.testcafe.e2e.js:6:768)
+            at <anonymous> (C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\tours.form.testcafe.e2e.js:6:509)
+            at <anonymous> (C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\tours.form.testcafe.e2e.js:86:1)
+    ]]>
+    </failure>
+  </testcase>
+  <testcase classname="php visa test login" file="C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\visa.form.testcafe.e2e.js" name="Provjeri da li se aplikacija za vize uspjesno ucitava i ispravnost linka" time="12.219">
+  </testcase>
+  <testcase classname="php visa test login" file="C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\visa.form.testcafe.e2e.js" name="Odaberi drzavu iz koje se trazi viza i trazenu lokaciju po zahtjevu za datum" time="29.271">
+  </testcase>
+  <testcase classname="php visa test login" file="C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\visa.form.testcafe.e2e.js" name="Provjera da li se submit form prijavljuje, njegova ispunjenost i ispravnost linka" time="29.774">
+  </testcase>
+  <testcase classname="php visa test login" file="C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\visa.form.testcafe.e2e.js" name="Test ne smije prikazat success form submitted ako se ne unesu svi valjani podaci" time="22.197">
+    <failure>
+    <![CDATA[
+      1) AssertionError: expected 'https://phptravels.net/success/visa' to not deeply equal 'https://phptravels.net/success/visa'
+
+         Browser: Chrome 101.0.4951.54 / Windows 10
+
+            150 |
+            151 |        await t.click(Selector('span').withText(' Submit').parent('button'))  
+            152 |        
+            153 |        await t
+            154 |            .expect((ClientFunction(() => window.location.href)()))
+          > 155 |            .notEql("https://phptravels.net/success/visa")
+            156 |        
+            157 | })
+            158 |
+            159 |
+
+            at <anonymous> (C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\visa.form.testcafe.e2e.js:155:14)
+            at asyncGeneratorStep (C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\visa.form.testcafe.e2e.js:8:276)
+            at _next (C:\Users\Legion\Desktop\projekt\e2e-testcafe\regression\test\visa.form.testcafe.e2e.js:8:614)
+    ]]>
+    </failure>
+  </testcase>
+</testsuite>
